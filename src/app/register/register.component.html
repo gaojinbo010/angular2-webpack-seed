@@ -1,0 +1,29 @@
+<div class="reg-panel">
+
+    <form [formGroup]="regForm">
+        <label>
+                Name:
+                <input type="text" formControlName="name" placeholder="Name" />
+            </label>
+        <label>
+                Author:
+                <input type="text" formControlName="author" placeholder="Author" />
+            </label>
+        <label>
+                Price:
+                <input type="text" formControlName="price" placeholder="Price" />
+            </label>
+        <label>
+                State:
+                <input type="radio" name="state" formControlName="state" value="active"/>Active 
+                <input type="radio" name="state" formControlName="state" value="unactive"/>Unactive
+            </label>
+        <label>
+                <button type="button" (click)="validate()">validate</button>
+                <button type="submit" (click)="save()">submit</button>
+            </label>
+    </form>
+    <pre>
+        {{regForm.value | json}}
+    </pre>
+</div>

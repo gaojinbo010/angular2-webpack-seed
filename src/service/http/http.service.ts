@@ -25,13 +25,16 @@ export class HttpService {
                         .catch((error)=>console.log('Error : ',error));
     }
 
-    // post(api: string, body: Object) {
-    //     let headers = new Headers({ 'Content-Type': 'application/json' });
-    //     let options = new RequestOptions({ headers: headers });
-    //     let obj = JSON.stringify(body);
+    post(api: string, body: Object) {
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        let options = new RequestOptions({ headers: headers });
+        let obj = JSON.stringify(body);
 
-    //     return this.http.post(this.rootPath + api, obj, headers)
-    //                     .map((resp: Response) => resp.json());
-    // }
+        return this.http.post(this.rootPath + api, obj, headers)
+                        // .map((resp: Response) => resp.json());
+                        .toPromise()
+                        .then(res => res.json().data)
+                        // .catch(()=>{ console.log('HttpService post Error ~!!!');});
+    }
 
 }

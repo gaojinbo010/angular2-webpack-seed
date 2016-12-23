@@ -43,7 +43,8 @@ export class PeopleComponent {
     constructor(private peopleService: PeopleService) {
 
         console.log('PeopleComponent Loaded !!!');
-        this.peopleService.getPeople().subscribe(data => this.persons = data)
+        this.peopleService.getPeople().subscribe(data => this.persons = data);
+        console.log(this.persons);
     }
 
     @HostBinding('@routeAnimation')

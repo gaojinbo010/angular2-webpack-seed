@@ -1,7 +1,6 @@
 {
   "name": "angular2-webpack-seed",
   "version": "1.0.0",
-  "author": "gaojinbo <gaojinbo010@outlook.com>",
   "description": "A simple project with Angular2 and webpack and Typescript",
   "scripts": {
     "build": "webpack --progress",
@@ -23,7 +22,6 @@
     "@angular/router": "~3.2.1",
     "@angular/upgrade": "~2.2.1",
     "angular2-in-memory-web-api": "0.0.21",
-    "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "ie-shim": "^0.1.0",
     "reflect-metadata": "^0.1.3",
@@ -32,10 +30,10 @@
   },
   "devDependencies": {
     "@types/node": "^6.0.48",
+    "angular-in-memory-web-api": "^0.2.0",
     "angular2-router-loader": "^0.3.4",
     "angular2-template-loader": "^0.6.0",
     "awesome-typescript-loader": "^2.2.4",
-    "angular-in-memory-web-api": "^0.2.0",
     "css-loader": "^0.25.0",
     "raw-loader": "^0.5.1",
     "to-string-loader": "^1.1.4",

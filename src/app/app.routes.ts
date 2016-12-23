@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'contact', loadChildren:'./contact/contact.module#ContactModule' },
   { path: 'people', loadChildren: './people/people.module#PeopleModule' },
   { path: 'login', loadChildren: './login/login.module#LoginModule' },
+  { path: 'register', loadChildren:'./register/register.module#RegisterModule' },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 const routing = RouterModule.forRoot(routes);

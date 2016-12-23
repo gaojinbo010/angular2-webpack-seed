@@ -32,6 +32,11 @@ export default class PeopleService {
         return this.searchPeople().then(people=>people.find(p=>p.id==id));
     }
 
+    //4.添加
+    savePeson(person:Person){
+
+        this.http.post('/people',person);
+    }
 
 
 }

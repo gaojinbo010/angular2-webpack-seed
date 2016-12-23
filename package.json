@@ -1,6 +1,7 @@
 {
   "name": "angular2-webpack-seed",
   "version": "1.0.0",
+  "author": "gaojinbo <gaojinbo010@outlook.com>",
   "description": "A simple project with Angular2 and webpack and Typescript",
   "scripts": {
     "build": "webpack --progress",

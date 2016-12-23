@@ -1,0 +1,47 @@
+*{
+    color:steelblue;
+}
+li{
+    text-align: left;
+    cursor: pointer;
+}
+.del-span{
+    position: relative;
+    cursor:pointer;
+    margin-left: 20px;
+}
+.del-span::after{
+    content: '\2718';
+    color: steelblue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.del-span:hover::after{
+    color:lawngreen;
+    transform: scale(1.5) rotate(10deg);
+}
+
+.edit-span{
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.edit-span::after{
+    content: '\26A0';
+    color: yellowgreen;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    transition: all 0.5s;
+}
+.edit-span:hover::after{
+    color:darkslategrey;
+    transform: scale(1.5) rotate(10deg);
+}

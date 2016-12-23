@@ -1,0 +1,12 @@
+<div>
+    <ul>
+        <h1 [highlight]="'#29ab76'" [defaultColor]="'violet'">People List</h1>
+        <li *ngFor="let p of persons" 
+            [@personState]="p.state">
+            <span (click)="toggleState(p)"> {{ p.price | upperPrice }} </span>
+            <span (click)="remove(p.id);" class="del-span"></span>
+            <span (click)="info(p.id)" class="edit-span"></span>
+        </li>
+    </ul>
+    <person-detail [person]="currentPerson"></person-detail>
+</div>

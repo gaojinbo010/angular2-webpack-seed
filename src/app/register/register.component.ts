@@ -22,8 +22,8 @@ export class RegisterComponent{
         console.log('ngOnInit of RegisterComponent !!!');
         this.regForm=this.formBuilder.group({
             name:['',Validators.required],
-            author:['',Validators.required],
-            price:['',Validators.required],
+            nick:['',Validators.required],
+            age:['',Validators.required],
             state:['',Validators.required]
         });
     }

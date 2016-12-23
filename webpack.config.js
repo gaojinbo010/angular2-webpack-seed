@@ -2,6 +2,8 @@ var webpack = require('webpack');
 var path = require('path');
 var webpackMerge = require('webpack-merge');
 var DashboardPlugin = require('webpack-dashboard/plugin');
+// const autoprefixer = require('autoprefixer');
+
 
 var webpackConfig = {
   entry: {
@@ -17,7 +19,9 @@ var webpackConfig = {
     new webpack.ContextReplacementPlugin(/angular(\\|\/)core(\\|\/)src(\\|\/)linker/, path.resolve(__dirname, './src'), { /* ... */ }),
     new DashboardPlugin()
   ],
-
+  // postcss:[
+  //   autoprefixer({browsers: ['last 3 versions']})
+  // ],
   module: {
     loaders: [
       { test: /\.ts$/, loaders: ['awesome-typescript-loader', 'angular2-template-loader', 'angular2-router-loader'] },
@@ -50,17 +54,6 @@ var defaultConfig = {
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
       "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
     }
-  },
-
-  node: {
-    global: true,
-    crypto: 'empty',
-    __dirname: true,
-    __filename: true,
-    process: true,
-    Buffer: false,
-    clearImmediate: false,
-    setImmediate: false
   }
 };
 

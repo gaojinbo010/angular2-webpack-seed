@@ -6,30 +6,30 @@ export class InMemoryPeopleService implements InMemoryDbService {
         let people = [
             {
                 "id": 1,
-                "author": "Mr.Nice",
-                "name": "<<Mr.Nice.Name>>",
-                "price": 32,
+                "nick": "Mr.Nice",
+                "name": "Mr.Nice.Name",
+                "age": 32,
                 "state":"active"
             },
             {
                 "id": 2,
-                "author": "Narco",
-                "name": "<<Narco Name>>",
-                "price": 30,
+                "nick": "Narco",
+                "name": "Narco Name",
+                "age": 30,
                 "state":"inactive"
             },
             {
                 "id": "3",
-                "author": "Dynama",
-                "name": "<<Bombasto Fire>>",
-                "price": 24,
+                "nick": "Dynama",
+                "name": "Bombasto Fire",
+                "age": 24,
                 "state":"inactive"
             },
             {
                 "id": 4,
-                "author": "RubberMan",
-                "name": "<<TorNado Leaf>>",
-                "price": 20,
+                "nick": "RubberMan",
+                "name": "TorNado Leaf",
+                "age": 20,
                 "state":"inactive"
             }
         ];

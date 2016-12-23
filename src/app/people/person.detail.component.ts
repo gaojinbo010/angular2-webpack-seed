@@ -8,9 +8,9 @@ import { Person } from '../../class/person';
             <h3>Here Details : </h3>
             <ul style="text-align:left">
                 <li>{{person.id}}</li>
-                <li>{{person.author}}</li>
+                <li>{{person.nick}}</li>
                 <li>{{person.name}}</li>
-                <li>{{person.price | currency}}</li>
+                <li>{{person.age | currency}}</li>
             </ul>
             <div>
                 <label>Name:</label>

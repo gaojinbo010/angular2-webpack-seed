@@ -42,7 +42,7 @@ export class RegisterComponent{
             console.log('OK valid is ture !!!');
             this.person=this.regForm.value;
             console.log(this.person);
-            this.person.id=34;
+            this.person.id=Math.ceil(Math.random()*1000);;
             this.personService.savePeson(this.person)//.then((e)=>{ console.log(e); })
         }else{
 
